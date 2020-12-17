@@ -24,3 +24,8 @@ export LANG=${LANG:-C.UTF-8}
 export TZ=${TZ:-UTC}
 
 # metadata
+
+# rJava Config
+cd /etc/profile
+export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
+
