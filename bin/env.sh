@@ -28,4 +28,5 @@ export TZ=${TZ:-UTC}
 # rJava Config
 cd /etc/profile
 export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
-
+cd .
+export PATH=$PATH:$JAVA_HOME/bin
