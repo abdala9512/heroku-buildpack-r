@@ -111,3 +111,7 @@ in_chroot_sudo() {
       --faked "$ROOTFS/usr/bin/faked-sysv" \
     /usr/sbin/chroot $ROOTFS "$@"
 }
+
+initialize_java() {
+  mkdir -p /usr/share/man/man1
+}
