@@ -17,6 +17,9 @@ ENV_DIR=$3
 # import supporting script
 source "${BUILDPACK_DIR}/bin/script-common"
 
+# Java requirements
+initialize_java
+
 # derive number from stack (heroku-16, heroku-18, heroku-20)
 HEROKU_STACK=${STACK:7}
 
